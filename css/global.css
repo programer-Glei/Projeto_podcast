@@ -144,3 +144,16 @@ aside footer .progresso .slider{
 aside footer .buttons{
     margin-top: 2.5rem;
 }
+
+aside footer .buttons button{
+    background: transparent;
+    border: 0;
+    font-size: 0;
+}
+
+.buttons .tocar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: var(--purple-400);
+}
