@@ -109,7 +109,7 @@ aside header{
     display: flex;
     align-items: center;
 }
-aside img{
+aside header img{
     margin-right: 1rem;
 }
 
@@ -126,7 +126,12 @@ aside .player-vazio{
     text-align: center;
 }
 
+aside footer{
+    width: 100%;
+}
+
 aside footer .progresso{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +139,7 @@ aside footer .progresso{
 }
 
 aside footer .progresso .slider{
-    width: 100%;
+    flex: 1;
     height: 4px;
     background: var(--purple-300);
     border-radius: 2px;
@@ -143,12 +148,16 @@ aside footer .progresso .slider{
 
 aside footer .buttons{
     margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 aside footer .buttons button{
     background: transparent;
     border: 0;
-    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons .tocar{
