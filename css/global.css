@@ -60,13 +60,47 @@ button{
     cursor: pointer;
 }
 
-/* Header */
+/* container */
 
-header{
+.container{
+    display: flex;
+}
+
+/* main */
+
+main{
+    flex: 1;
+}
+
+main header{
     background: var(--white);
     height: 6.5rem;
     display: flex;
     align-items: center;
     padding: 2rem 4rem;
     border: 1px solid var(--gray-100);
+}
+
+main header p{
+    margin-left: 2rem;
+    padding: 0.25rem 0 0.25rem 2rem;
+    border-left: 1px solid var(--gray-100);
+}
+
+main header span{
+    margin-left: auto;
+    text-transform: capitalize;
+}
+
+/* aside*/
+aside{
+    padding: 3rem 4rem;
+    width: 26.5rem;
+    height: 100vh;
+    background: var(--purple-500);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
