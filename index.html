@@ -53,5 +53,21 @@
             </footer>
         </aside>
     </div>
+    <script>
+       let getJson = (url, call) => {
+           let xhr = new XMLHttpRequest();
+           xhr.open('GET', url, true)
+           xhr.responseType = 'json';
+           xhr.onreadystatechange = () =>{
+               let status = xhr.status;
+               if(status == 200){
+                   //callback caso de tudo certo
+                   call(null,xhr.response)
+               }else{
+                   
+               }
+           }
+       }
+    </script>
 </body>
 </html>
